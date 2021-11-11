@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*========== Global ==============*/
+
+h1 {
+    font-size: 6.5vw;
+}
+
+h3 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: Merriweather, sans-serif;
+    word-spacing: 0.4vw;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6caa7f;
+}
+
+p {
+    font-size: 0.9rem;
+    font-family: 'karla', sans-serif;
+}
+
+hr {
+    background: #023952;
+    color: #023952;
+    height: 0.07rem;
+}
+
+/********** Header ***********/
+
+header .intro {
+    position: relative;
+}
+
+header .intro .head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .intro .head h1 {
+    font-family: "Montez", cursive;
+    color: #1a1a1a;
+}
+
+header .intro .head h6 {
+    color: #035c94;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+/********** Navbar ***********/
+
+header .navbar .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: width 0.3s;
+}
+
+header .navbar .navbar-nav .nav-link:hover::after {
+    width: 95%;
+    height: 2px;
+    background-color: #dde6ed;
+    transition: width 0.3s;
+    border-bottom: 2px solid #2da5e0;
+}
+
+header .navbar .navbar-nav i {
+    font-size: 1.1rem;
+    color: #6caa7f;
+}
+
+header .navbar .navbar-nav i:hover {
+    font-size: 1.2rem;
+    color: #035c94;
+}
+
+/********** Latest Reviews ***********/
+
+
+.featured .row .card{
+    min-width: 230px;
+    display: inline-block;
+    width: 100%;
+}
+
+.featured .row .card-header h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-family: 'lato', serif;
+
+}
+
+
+.featured .row .card-body img {
+    min-width: 220px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.featured .row .card-body a {
+    text-decoration: none;
+    color: #6caa7f;
+    font-size: 00.9rem;
+    line-height: 1.5px;
+    font-weight: bold;
+}
+
+.featured .row .card-body a::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: #6caa7f;
+}
+
+@media (min-width: 770px) {
+
+    .featured .row {
+        width: 100%;
+    }
+    .featured .row .card {
+        width: 45%;
+        
+    }
+}
+
+@media (min-width: 992px) {
+
+    .featured .row {
+        width: 100%;
+    }
+    .featured .row .card {
+        width: 30%;
+        
+    }
+}
+
+/********** Subscription ***********/
+
+.subscription {
+    background-color: #d5eef5;
+}
+
+
+.subscription .row .sub input {
+    outline: none;
+    border: 1px solid #023952;
+}
+
+.subscription .row .sub input::placeholder {
+    font-size: 0.9rem;
+}
+
+.subscription .row .sub button {
+    padding: 8px;
+    background-color: #6caa7f;
+    color: #fff;
+    border: none;
+}
+
+.subscription .row .sub button:hover {
+    background-color: #023952;
+}
+
+/********** Blog posts ***********/
+
+.blog .row .posts h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.blog .row .posts a {
+    text-decoration: none;
+    color: #6caa7f;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-style: none;
+}
+
+/********** Sidebar ***********/
+.blog .row .sidebar .side2 .row .sidetext h4 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.blog .row .sidebar .side2 .row .sidetext a{
+    text-decoration: none;
+    color: #6caa7f;
+    font-size: 00.9rem;
+    line-height: 1.5px;
+    font-weight: bold;
+}
+
+/********** Footer ***********/
+.footer .page-footer {
+    background-color: #6caa7f;
+}
+
+.footer .page-footer .footer-copyright a {
+    text-decoration: none;
+    color: #fff;
+}
